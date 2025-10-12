@@ -778,7 +778,6 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     color: var(--white);
     padding: 8rem 0 4rem;
-    margin-top: 76px;
     display: flex;
     align-items: center;
     min-height: 100vh;
