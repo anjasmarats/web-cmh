@@ -623,6 +623,30 @@
         </div>
     </section>
 
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- Footer -->
     <footer class="footer py-5">
         <div class="container">
@@ -681,98 +705,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="paymentModalLabel">
-                        <i class="fas fa-hands-helping mr-2"></i>Langkah Menuju Kesehatan Mental yang Lebih Baik
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="icon-box">
-                        <div class="icon-circle">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    
-                    <p class="text-center mb-4">Kami sangat menghargai keputusan Anda untuk mengambil langkah positif dalam perjalanan kesehatan mental Anda. Sebelum memulai sesi konsultasi, kami mohon kesediaan Anda untuk menyelesaikan pembayaran terlebih dahulu.</p>
-                    
-                    <div class="payment-info">
-                        <h6 class="font-weight-bold mb-3"><i class="fas fa-credit-card mr-2"></i>Informasi Pembayaran</h6>
-                        <p>Silakan transfer biaya konsultasi ke rekening berikut:</p>
-                        
-                        <div class="d-flex justify-content-between align-items-center flex-wrap">
-                            <div>
-                                <p class="mb-1">Bank Central Asia (BCA)</p>
-                                <p class="account-number">1234 5678 9012 3456</p>
-                                <p class="mb-0">a.n. Mental Health Center Indonesia</p>
-                            </div>
-                            <button class="copy-btn" id="copyAccountBtn">
-                                <i class="fas fa-copy mr-1"></i>Salin No. Rekening
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h6 class="font-weight-bold">Lakukan Transfer</h6>
-                            <p class="mb-0">Transfer biaya konsultasi sebesar <strong>Rp 350.000</strong> ke nomor rekening di atas. Biaya ini sudah termasuk satu sesi konsultasi penuh selama 60 menit.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h6 class="font-weight-bold">Konfirmasi Pembayaran</h6>
-                            <p class="mb-0">Setelah transfer, harap kirim bukti pembayaran melalui WhatsApp ke <strong>0812-3456-7890</strong> atau email ke <strong>admin@mentalhealthcenter.id</strong>.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h6 class="font-weight-bold">Jadwalkan Sesi</h6>
-                            <p class="mb-0">Tim kami akan menghubungi Anda dalam waktu 1x24 jam untuk menjadwalkan sesi konsultasi dengan coach profesional kami.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-4">
-                        <h6 class="font-weight-bold mb-3">Apa yang akan Anda dapatkan?</h6>
-                        <ul class="benefits-list">
-                            <li>Sesi konsultasi personal 60 menit dengan coach bersertifikat</li>
-                            <li>Rencana pengembangan pribadi yang disesuaikan dengan kebutuhan Anda</li>
-                            <li>Teknik-teknik praktis untuk mengelola stres dan kecemasan</li>
-                            <li>Akses ke materi pendukung eksklusif</li>
-                            <li>Dukungan berkelanjutan melalui grup komunitas eksklusif</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="note-box">
-                        <h6 class="font-weight-bold mb-2"><i class="fas fa-info-circle mr-2"></i>Penting</h6>
-                        <p class="mb-0">Sesi konsultasi hanya dapat dilaksanakan setelah pembayaran dikonfirmasi. Jika Anda mengalami kendala dalam proses pembayaran, jangan ragu untuk menghubungi kami.</p>
-                    </div>
-                    
-                    <div class="confirmation-check">
-                        <input type="checkbox" id="paymentConfirmation" class="mr-2">
-                        <label for="paymentConfirmation">Saya telah memahami prosedur pembayaran dan akan segera melakukan transfer</label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                    <button type="button" class="btn btn-primary" id="contactBtn" disabled>
-                        <i class="fas fa-comments mr-2"></i>Hubungi Kami untuk Pertanyaan
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
