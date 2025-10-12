@@ -680,17 +680,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.process-step:not(:last-child):after {
-    content: '';
-    position: absolute;
-    left: 25px;
-    top: 60px;
-    bottom: -3rem;
-    width: 2px;
-    background: var(--primary-light);
-    opacity: 0.3;
-}
-
 .step-number {
     background: var(--primary-color);
     color: var(--white);
