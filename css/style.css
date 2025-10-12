@@ -780,7 +780,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8rem 0 4rem;
     display: flex;
     align-items: center;
-    min-height: 76vh;
+    min-height: 60vh;
 }
 
 .about-hero-title {
